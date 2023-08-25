@@ -1,2 +1,4 @@
-<h2>{{cardTitle.band}}</h2>
-<h2>{{cardTitle.album}}</h2>
+<div *ngFor="let cardTitle of cardTitles">
+    <h2>{{cardTitle.band}}</h2>
+    <h2>{{cardTitle.album}}</h2>
+</div>

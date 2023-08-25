@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CardInfo } from '../cards';
+import { CARDS } from '../mock-cards';
 
 @Component({
   selector: 'app-card',
@@ -7,8 +8,5 @@ import { CardInfo } from '../cards';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-  cardTitle : CardInfo = {
-      band:"Slipknot",
-      album:"All hope is gone"
-  }
+  cardTitles = CARDS;
 }
