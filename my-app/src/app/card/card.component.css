@@ -1,0 +1,7 @@
+.selected{
+    background: lightblue;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid rgb(0, 6, 48);
+    width: fit-content;
+}

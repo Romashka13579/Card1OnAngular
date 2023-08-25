@@ -9,4 +9,8 @@ import { CARDS } from '../mock-cards';
 })
 export class CardComponent {
   cardTitles = CARDS;
+  selectedCard?: CardInfo;
+  onSelect(cardTitle: CardInfo): void {
+    this.selectedCard = cardTitle;
+  }
 }
