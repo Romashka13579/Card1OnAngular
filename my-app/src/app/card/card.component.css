@@ -5,3 +5,22 @@
     border: 2px solid rgb(0, 6, 48);
     width: fit-content;
 }
+
+.main-block{
+    width: 100vw;
+    height: 100vh;
+}
+
+.card-block{
+    margin: 50px 200px;
+}
+
+.my-card{
+    width: 200px;
+    height: 200px;
+    background: rgb(230, 228, 206);
+} 
+
+div{
+    text-align: center;
+}

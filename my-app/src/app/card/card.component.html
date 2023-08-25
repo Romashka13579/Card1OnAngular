@@ -1,9 +1,13 @@
-<div *ngFor="let cardTitle of cardTitles">
-    <button type="button" (click)="onSelect(cardTitle)"></button>
-    <h2>{{cardTitle.band}}</h2>
-    <h2 [class.selected]="cardTitle === selectedCard">{{cardTitle.album}}</h2>
+<div class="main-block">
+    <div class="d-flex justify-content-evenly card-block">
+        <!-- <button type="button" (click)="onSelect(cardTitle)"></button> -->
+        <div class="my-card d-flex align-content-center flex-wrap justify-content-center" (click)="onSelect(cardTitle)"
+            *ngFor="let cardTitle of cardTitles">
+            <h4 class="text-center">{{cardTitle.band}}</h4>
+            <h4 class="text-center" [class.selected]="cardTitle === selectedCard">{{cardTitle.album}}</h4>
+        </div>
+    </div>
 </div>
-
 <div *ngIf="selectedCard">
     <h2>{{selectedCard.album}}</h2>
 </div>
