@@ -13,4 +13,5 @@ export class CardComponent {
   onSelect(cardTitle: CardInfo): void {
     this.selectedCard = cardTitle;
   }
+  index = 2;
 }

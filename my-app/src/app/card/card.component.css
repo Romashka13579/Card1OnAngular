@@ -7,19 +7,31 @@
 }
 
 .main-block{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
 }
 
 .card-block{
-    margin: 50px 200px;
+    margin: 100px 150px;
 }
 
 .my-card{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     background: rgb(230, 228, 206);
+    border-radius: 25px;
 } 
+
+.my-card:nth-child(1){
+    background: url(../../assets/images/Sleep-Token--Take-Me-Back-To-Eden.webp) center/cover;
+}
+
+.my-card:nth-child(2){
+    background: url(../../assets/images/slipknot.jpg) center/cover;
+}
+
+.my-card:nth-child(3){
+    background: url(../../assets/images/Dying-Is-Your-Latest-Fashion.jpg) center/cover;
+}
 
 div{
     text-align: center;
