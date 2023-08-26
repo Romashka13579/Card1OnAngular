@@ -78,7 +78,7 @@ div{
     from{
         transform: translateX(0px);
         opacity: 1;
-        scale:1;
+        scale:0.9;
     }
     to{
         transform: translateX(-80px);
@@ -91,7 +91,7 @@ div{
     from{
         transform: translateX(0px);
         opacity: 1;
-        scale:1;
+        scale:0.9;
     }
     to{
         transform: translateX(80px);

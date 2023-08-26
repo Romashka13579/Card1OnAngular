@@ -3,10 +3,7 @@
         <!-- <button type="button" (click)="onSelect(cardTitle)"></button> -->
         <div class="d-flex my-card-over" (mouseenter)="onEntered(cardTitle)"
             *ngFor="let cardTitle of cardTitles; index as i">
-            <div class="my-card d-flex align-content-center flex-wrap justify-content-center">
-                <h4 class="text-center">{{cardTitle.band}}</h4>
-                <h4 class="text-center" [class.selected]="cardTitle === selectedCard">{{cardTitle.album}}</h4>
-            </div>
+            <div class="my-card d-flex align-content-center flex-wrap justify-content-center"></div>
             <div class="card-faders">
                 <div class="card-fader"></div>
                 <div class="card-fader"></div>
