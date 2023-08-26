@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CardInfo } from '../cards';
-import { CARDS } from '../mock-cards';
+import { CARDS, CARDSDATACOLOR } from '../mock-cards';
 
 @Component({
   selector: 'app-card',
@@ -9,9 +9,13 @@ import { CARDS } from '../mock-cards';
 })
 export class CardComponent {
   cardTitles = CARDS;
+  cardColors = CARDSDATACOLOR;
   selectedCard?: CardInfo;
-  onSelect(cardTitle: CardInfo): void {
+  onEntered(cardTitle: CardInfo): void {
     this.selectedCard = cardTitle;
+  }
+  onLeft(cardTitle: CardInfo): void {
+    this.selectedCard != cardTitle;
   }
   index = 2;
 }
