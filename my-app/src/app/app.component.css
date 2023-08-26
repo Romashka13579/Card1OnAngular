@@ -1,3 +1,7 @@
 .my-title{
     padding: 25px;
 }
+.main-block{
+    background: rgb(207, 226, 233);
+    min-height: 100vh;
+}

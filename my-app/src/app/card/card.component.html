@@ -1,7 +1,7 @@
 <div class="main-block">
     <div class="d-flex justify-content-evenly card-block">
         <!-- <button type="button" (click)="onSelect(cardTitle)"></button> -->
-        <div class="d-flex my-card-over" (mouseenter)="onEntered(cardTitle)"
+        <div class="d-flex my-card-over" (click)="onClick(cardTitle)"
             *ngFor="let cardTitle of cardTitles; index as i">
             <div class="my-card d-flex align-content-center flex-wrap justify-content-center"></div>
             <div class="card-faders">
@@ -15,7 +15,13 @@
         </div>
     </div>
 </div>
-<div *ngIf="selectedCard">
-    <h2>{{selectedCard.album}}</h2>
-</div>
-<div *ngFor="let i = index">Aboba</div>
+<div class="input-block" *ngIf="selectedCard">
+    <div class="input-group mb-3 ">
+        <span class="input-group-text" id="basic-addon1">Band name:</span>
+        <input type="text" class="form-control" [(ngModel)]="selectedCard.band" placeholder="name" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <div class="input-group mb-3 ">
+        <span class="input-group-text" id="basic-addon1">Album:</span>
+        <input type="text" class="form-control" [(ngModel)]="selectedCard.album" placeholder="name" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+  </div>

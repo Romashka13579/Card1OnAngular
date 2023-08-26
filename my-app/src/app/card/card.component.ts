@@ -11,11 +11,8 @@ export class CardComponent {
   cardTitles = CARDS;
   cardColors = CARDSDATACOLOR;
   selectedCard?: CardInfo;
-  onEntered(cardTitle: CardInfo): void {
+  onClick(cardTitle: CardInfo): void {
     this.selectedCard = cardTitle;
-  }
-  onLeft(cardTitle: CardInfo): void {
-    this.selectedCard != cardTitle;
   }
   index = 2;
 }
