@@ -15,4 +15,7 @@ export class CardComponent {
     this.selectedCard = cardTitle;
   }
   index = 2;
+  SaverClick(cardTitle: CardInfo): void {
+    this.selectedCard = cardTitle;
+  }
 }
